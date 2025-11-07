@@ -326,3 +326,61 @@ footer .cores {
     opacity: 1;
   }
 }
+
+/* ---------- LINHA DO TEMPO (1ºA, 1ºB e 2ºB) ---------- */
+.linha-tempo {
+  text-align: center;
+  background: linear-gradient(180deg, #004aad, #002a66);
+  color: #fff;
+  padding: 60px 20px;
+  border-top: 3px solid #ffcc00;
+  border-bottom: 3px solid #ffcc00;
+}
+
+.linha-tempo h2 {
+  color: #ffcc00;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.polaroid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.polaroid {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 10px;
+  width: 230px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid:nth-child(2) {
+  transform: rotate(3deg);
+}
+
+.polaroid:hover {
+  transform: scale(1.05) rotate(0deg);
+  box-shadow: 0 12px 30px rgba(255, 204, 0, 0.6);
+}
+
+.polaroid img,
+.video-polaroid video {
+  width: 100%;
+  border-radius: 8px;
+  border: 3px solid #ffcc00;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.legenda-polaroid {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #002a66;
+}
