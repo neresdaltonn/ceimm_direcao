@@ -175,21 +175,26 @@
   </p>
 </section>
 
-    <!-- Encerramento -->
-    <section class="final">
-      <blockquote>
-        “A educação é a estrada que nos guia.  
-        E cada professor, cada diretora, cada amigo que encontramos,  
-        é uma estrela que ilumina o caminho.” ✨
-      </blockquote>
-<p class="assinatura">
-  Com carinho, <strong>Turma do 3ºB de Exatas – 2025</strong>
-</p>
-
-<a href="https://drive.google.com/file/d/1QjDvu0oxqSXn3AfQEorkFvwqIXtko0jn/view?usp=sharing" target="_blank" class="btn-surpresa">
+<!-- Mensagem do passarinho -->
+<div class="passarinho-mensagem">
+  <p>🐦 <strong>O passarinho voltou para dar um último recado...</strong></p>
+  <p>
+    Se preparem para se emocionar e receber a nossa homenagem,  
+    preparada com todo o amor e carinho pela <strong>Turma do 3º Ano B</strong>. 💙  
+  </p>
+  <p>
+    E lembrando: como estava escrito na carta,  
+    vocês <strong>precisam estar sendo gravadas neste momento</strong>, tá? 🎥  
+    A gente está em prova — realizando mais um passo rumo às nossas universidades —  
+    mas queremos ver a reação de vocês quando receberem essa surpresa.  
+  </p>
+  <a href="https://drive.google.com/file/d/1QjDvu0oxqSXn3AfQEorkFvwqIXtko0jn/view?usp=sharing" target="_blank" class="btn-surpresa">
   🎬 Surpresa Extrema
 </a>
-    </section>
+  <p>
+    Beijinhos da <strong>Turma do 3º Ano B de Exatas!</strong> 💫
+  </p>
+</div>
 
     <!-- Rodapé -->
     <footer>
@@ -226,5 +231,32 @@
       const interval = setInterval(updateCountdown, 1000);
       updateCountdown();
     </script>
+
+    <!-- Script Pop-up -->
+<script>
+  window.addEventListener("load", () => {
+    const popup = document.getElementById("popup-homenagem");
+    popup.classList.add("show");
+
+    // Fecha automaticamente após 10 segundos
+    setTimeout(() => {
+      popup.classList.remove("show");
+    }, 5000);
+  });
+</script>
+
+    <!-- Pop-up para as diretoras -->
+<div id="popup-homenagem" class="popup">
+  <div class="popup-content">
+    <h2>💛 Olá, queridas diretoras Liliana e Rosalba!</h2>
+    <p>
+      Já separaram o lencinho pra se emocionar? 🥹<br />
+      Já estão sendo gravadas neste momento? 🎥<br /><br />
+      Pois bem... podemos continuar então. 💙<br />
+      <strong>Beijinhos da Turma do 3º Ano B!</strong>
+    </p>
+  </div>
+</div>
+
   </body>
 </html>
